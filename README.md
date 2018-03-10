@@ -28,7 +28,7 @@ $ sudo visudo
 ```
 Apache will need to run "vcgencmd" and "gpio-ctl.py" as root. Add the following lines:
 ```bash
-# www-data ALL=(root) NOPASSWD: /var/www/html/cgi-bin/gpio-ctl.cgi [0-9] [0-9], /var/www/html/cgi-bin/gpio-ctl.cgi [0-9][0-9] [0-9]
+# www-data ALL=(root) NOPASSWD: /var/www/html/private/cgi-bin/gpio-ctl.cgi [0-9] [0-9], /var/www/html/private/cgi-bin/gpio-ctl.cgi [0-9][0-9] [0-9]
 # www-data ALL=(root) NOPASSWD: /opt/vc/bin/vcgencmd
 ``` 
 Install python requirements and apache site configuration. Then open /etc/apache2/sites-available/001-powerctl.conf" with your favourite text editor to update "raspberrypi" to the FQDN of your Raspberry Pi and "foobarbaz" to your DDNS domain name.
