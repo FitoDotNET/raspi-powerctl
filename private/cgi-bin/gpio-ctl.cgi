@@ -22,6 +22,7 @@ try:
 	GPIO.output(p, True)
 	sleep(t)
 	GPIO.output(p, False)
+	sleep(1)
 	GPIO.cleanup()
 
 	del p, t
